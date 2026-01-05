@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Chatbot</title>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f9f9f9; }
+        h2 { color: #2c3e50; }
+        form { margin-bottom: 20px; display: flex; gap: 8px; }
+        input { padding: 10px; flex: 1; }
+        button { padding: 10px; background: #3498db; color: white; border: none; cursor: pointer; }
+        .card { background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+        .response { white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h2>🤖 Medical Chatbot</h2>
+    <form method="post">
+        <input name="message" placeholder="Describe your symptoms (e.g., cough, fever for 2 days)">
+        <button>Send</button>
+    </form>
+    <div class="card response">{{ response|safe }}</div>
+</body>
+</html>

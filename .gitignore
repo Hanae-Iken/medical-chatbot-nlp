@@ -1,0 +1,41 @@
+# Environnement virtuel
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Installation packages
+build/
+dist/
+*.egg-info/
+
+# Fichiers de configuration personnelle
+.config/
+.settings/
+
+# Fichiers sensibles
+*.key
+*.pem
+secrets.py
+credentials.json
+
+# Données téléchargeables
+en_core_web_md/
+nltk_data/
+
+# Logs et temporaires
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Système
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
